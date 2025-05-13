@@ -15,20 +15,23 @@ export default function WaitlistForm() {
   const [nickname, setNickname] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSubmit = useCallback((e: SyntheticEvent) => {
-    e.preventDefault();
-    try {
-      console.log({ nickname, email });
-      setIsSubmitting(true);
-      setMessage("Successfully added to the waitlist.");
-      setOpenAlert(true);
-      setNickname("");
-      setEmail("");
-    } catch (error) {
-    } finally {
-      setIsSubmitting(false);
-    }
-  }, []);
+  const handleSubmit = useCallback(
+    (e: SyntheticEvent) => {
+      e.preventDefault();
+      try {
+        console.log({ nickname, email });
+        setIsSubmitting(true);
+        setMessage("Successfully added to the waitlist.");
+        setOpenAlert(true);
+        setNickname("");
+        setEmail("");
+      } catch (error) {
+      } finally {
+        setIsSubmitting(false);
+      }
+    },
+    [nickname, email]
+  );
   return (
     <>
       <div
