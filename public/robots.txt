@@ -4,4 +4,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://www.anonymizecare.com/sitemap.xml
+Sitemap: https://waitlist-mauve-theta.vercel.app/sitemap.xml
