@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1e1e1d;
+  --foreground: #ededed;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: CenturyGothic;
+  src: url("../static//font//CenturyGothic.ttf") format("ttf");
 }
-
+@theme {
+  --color-primary: #A4ED8E;
+  --color-secondary: #007CD7;
+  --color-dark-ash-900: #0a0a09;
+  --color-dark-ash-700: #1e1e1d;
+  --color-dark-ash-500: #454544;
+  --color-destructive: red;
+  --font-century: CenturyGothic, sans-serif
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -22,5 +27,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.backgdrop-bg-filter {
+  background-color: rgba(0, 134, 211, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }

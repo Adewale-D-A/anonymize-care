@@ -1,0 +1,76 @@
+"use client";
+
+import Button from "@/component/button";
+import AlertModal from "@/component/infoModal/alert-modal";
+import TextInput from "@/component/input/text";
+import { Logo } from "@/component/logo";
+import { SyntheticEvent, useCallback, useState } from "react";
+
+export default function WaitlistForm() {
+  const [openAlert, setOpenAlert] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [nickname, setNickname] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = useCallback((e: SyntheticEvent) => {
+    e.preventDefault();
+    try {
+      console.log({ nickname, email });
+      setIsSubmitting(true);
+      setMessage("Successfully added to the waitlist.");
+      setOpenAlert(true);
+      setNickname("");
+      setEmail("");
+    } catch (error) {
+    } finally {
+      setIsSubmitting(false);
+    }
+  }, []);
+  return (
+    <>
+      <div
+        className={`max-w-xl w-full font-century h-fit overflow-y-auto p-5 py-10 rounded-lg shadow-2xl shadow-primary flex flex-col items-center gap-10 ${
+          false && "bg-gradient-to-tr from-[#007CD7] via-[#63BEB1] to-[#A4ED8E]"
+        }`}
+      >
+        <div className="w-full flex flex-col gap-2 items-center justify-center">
+          <Logo />
+          <div className=" text-center">
+            <h4 className=" text-3xl font-bold">Anonymize Care Waitlist</h4>
+            <p className=" text-sm text-gray-500 max-w-sm">
+              Be the first to get updates on the latest features of our
+              AnonymizeCare App. Join the waitlist
+            </p>
+          </div>
+        </div>
+        <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5">
+          <TextInput
+            value={nickname}
+            onChange={(e) => setNickname(e.target.value)}
+            required
+            placeholder="Nick name"
+            type="text"
+            label="Nick name"
+            id="nick-name"
+          />
+          <TextInput
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder="Email"
+            type="email"
+            label="Email"
+            id="email"
+          />
+          <Button type="submit" isLoading={isSubmitting}>
+            Submit
+          </Button>
+        </form>
+      </div>
+      <AlertModal open={openAlert} onClose={setOpenAlert} message={message} />
+    </>
+  );
+}
