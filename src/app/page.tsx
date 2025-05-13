@@ -2,7 +2,7 @@ import WaitlistForm from "./waitlist-form";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Waitlist",
-  description: "Get latest updates of our anonymizecare app.",
+  description: "Get latest updates of our AnonymizeCare app.",
 };
 
 export default function Home() {
