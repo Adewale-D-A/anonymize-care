@@ -1,14 +1,17 @@
 "use client";
 
+import axios from "axios";
+import { SyntheticEvent, useCallback, useState } from "react";
 import Button from "@/component/button";
 import AlertModal from "@/component/infoModal/alert-modal";
 import TextInput from "@/component/input/text";
 import { Logo } from "@/component/logo";
-import { SyntheticEvent, useCallback, useState } from "react";
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASEURL;
 export default function WaitlistForm() {
   const [openAlert, setOpenAlert] = useState(false);
   const [message, setMessage] = useState("");
+  const [isError, setIsError] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -16,16 +19,33 @@ export default function WaitlistForm() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = useCallback(
-    (e: SyntheticEvent) => {
+    async (e: SyntheticEvent) => {
       e.preventDefault();
+      // setIsSubmitting(true);
       try {
-        console.log({ nickname, email });
         setIsSubmitting(true);
+        const response = await axios.post(
+          `${BASE_URL}/waitlist`,
+          {
+            email: email,
+            nickname: nickname,
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         setMessage("Successfully added to the waitlist.");
         setOpenAlert(true);
         setNickname("");
         setEmail("");
-      } catch (error) {
+      } catch (error: any) {
+        const mssg =
+          error?.response?.data?.message || "Unable to add to waitlist.";
+        setIsError(true);
+        setMessage(mssg);
+        setOpenAlert(true);
       } finally {
         setIsSubmitting(false);
       }
@@ -42,11 +62,16 @@ export default function WaitlistForm() {
         <div className="w-full flex flex-col gap-2 items-center justify-center">
           <Logo />
           <div className=" text-center">
-            <h4 className=" text-3xl font-bold">AnonymizeCare Waitlist</h4>
-            <p className=" text-sm text-gray-500 max-w-sm">
-              Be the first to get updates on the latest features of our
-              AnonymizeCare App. Join the waitlist
-            </p>
+            <h4 className=" text-3xl font-bold">
+              Join the AnonymizeCare Waitlist
+            </h4>
+            <div className=" w-full flex justify-center">
+              <p className=" text-sm text-gray-500  max-w-sm">
+                Be among the first to explore exclusive features and updates
+                from the upcoming AnonymizeCare App. Sign up now to reserve your
+                spot on our early access list!
+              </p>
+            </div>
           </div>
         </div>
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5">
@@ -73,7 +98,12 @@ export default function WaitlistForm() {
           </Button>
         </form>
       </div>
-      <AlertModal open={openAlert} onClose={setOpenAlert} message={message} />
+      <AlertModal
+        open={openAlert}
+        onClose={setOpenAlert}
+        message={message}
+        isError={isError}
+      />
     </>
   );
 }

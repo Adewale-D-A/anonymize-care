@@ -21,8 +21,7 @@ const AlertModal = ({
       <div
         className={`
           w-full flex items-center flex-col gap-5 
-          ${isError && "text-red-500"},
-          ${!isError && "text-green-500"}
+          ${isError ? "text-red-500" : "text-green-500"}
         `}
       >
         {isError ? (

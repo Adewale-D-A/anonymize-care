@@ -52,15 +52,15 @@ export default function ModalTemplate({
     >
       <div
         title="modal-content"
-        className="w-full max-w-2xl  bg-white dark:bg-dark-ash-900 h-fit max-h-[calc(100vh-100px)] overflow-y-auto p-4 lg:p-6 shadow-lg duration-200  rounded-lg"
+        className="w-full max-w-2xl  bg-dark-ash-900 h-fit max-h-[calc(100vh-100px)] overflow-y-auto p-4 lg:p-6 shadow-lg duration-200  rounded-lg"
       >
         {/* TITLE */}
         {title && (
-          <div className="headline-md-b uppercase dark:text-white text-dark-ash-900 font-bold border-b  dark:border-gray-700 border-gray-200 mb-5 pb-3 flex justify-between items-center">
+          <div className="headline-md-b uppercase text-dark-ash-900 font-bold border-b  border-gray-700 mb-5 pb-3 flex justify-between items-center">
             <h6 className=" text-xl">{title}</h6>{" "}
             <Button
               onClick={() => handleClose()}
-              className=" dark:text-red-500 hover:text-red-500 hover:scale-125 transition-all"
+              className=" text-red-500 hover:text-red-500 hover:scale-125 transition-all"
             >
               <Xicon />
             </Button>

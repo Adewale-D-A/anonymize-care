@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     template: "%s | AnonymizeCare",
     default: "AnonymizeCare",
   },
-  description: "First privacy first health care service.",
+  description:
+    "Be the first to experience the future of secure, anonymous healthcare. Sign up now to join the AnonymizeCare waitlist and get early access to exclusive features and updates.",
   applicationName: "AnonymizeCare Waitlist",
   referrer: "origin-when-cross-origin",
   keywords: [
