@@ -8,11 +8,11 @@ export const Logo = () => {
       className={"flex items-center justify-between rounded-lg overflow-hidden"}
     >
       <Image
-        src={"/logo.jpg"}
+        src={"/logo.png"}
         width={200}
         height={200}
         alt="anonymizeCare"
-        className="md:w-[80px] w-[50px]"
+        className="md:w-[150px] w-[100px]"
       />
     </Link>
   );

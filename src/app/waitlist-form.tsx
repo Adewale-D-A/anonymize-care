@@ -81,9 +81,9 @@ export default function WaitlistForm() {
             value={nickname}
             onChange={(e) => setNickname(e.target.value)}
             required
-            placeholder="Nick name"
+            placeholder="Nickname"
             type="text"
-            label="Nick name"
+            label="Nickname"
             id="nick-name"
           />
           <TextInput
