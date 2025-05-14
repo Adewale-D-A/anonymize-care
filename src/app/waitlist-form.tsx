@@ -21,10 +21,12 @@ export default function WaitlistForm() {
   const handleSubmit = useCallback(
     async (e: SyntheticEvent) => {
       e.preventDefault();
-      // setIsSubmitting(true);
+      setMessage("");
+      setIsError(false);
+      setIsSubmitting(true);
       try {
         setIsSubmitting(true);
-        const response = await axios.post(
+        await axios.post(
           `${BASE_URL}/waitlist`,
           {
             email: email,
