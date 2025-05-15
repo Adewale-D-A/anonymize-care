@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "privacy",
     "anonymous",
   ],
-  manifest: "https://7thcare.com/manifest.json",
+  manifest: "https://www.anonymizecare.com/manifest.json",
   robots: {
     index: true,
     follow: true,

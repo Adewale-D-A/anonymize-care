@@ -20,4 +20,4 @@ run **yarn install** (to install all the dependencies)
 step 2:
 run **npm run dev** (start application on port:3000)
 
-[FRONTEND LIVE URL](https://waitlist-mauve-theta.vercel.app/)
+[FRONTEND LIVE URL](https://www.anonymizecare.com/)
