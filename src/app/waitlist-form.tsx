@@ -1,7 +1,8 @@
 "use client";
 
 import axios from "axios";
-import { SyntheticEvent, useCallback, useState } from "react";
+import { SyntheticEvent, useCallback, useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import Button from "@/component/button";
 import AlertModal from "@/component/infoModal/alert-modal";
 import TextInput from "@/component/input/text";
@@ -9,14 +10,20 @@ import { Logo } from "@/component/logo";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASEURL;
 export default function WaitlistForm() {
+  const captchaRef = useRef<any>(null);
   const [openAlert, setOpenAlert] = useState(false);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
 
+  const [enableSubmit, setEnableSubmit] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [nickname, setNickname] = useState("");
   const [email, setEmail] = useState("");
+
+  function onChange(value: any) {
+    setEnableSubmit(value ? true : false);
+  }
 
   const handleSubmit = useCallback(
     async (e: SyntheticEvent) => {
@@ -24,6 +31,14 @@ export default function WaitlistForm() {
       setMessage("");
       setIsError(false);
       setIsSubmitting(true);
+      const token = captchaRef?.current?.getValue();
+      if (!token) {
+        setMessage("recaptcha failed");
+        setIsError(true);
+        setOpenAlert(true);
+        setIsSubmitting(false);
+        return;
+      }
       try {
         setIsSubmitting(true);
         await axios.post(
@@ -42,6 +57,8 @@ export default function WaitlistForm() {
         setOpenAlert(true);
         setNickname("");
         setEmail("");
+        captchaRef?.current?.reset();
+        setEnableSubmit(false);
       } catch (error: any) {
         const mssg =
           error?.response?.data?.message || "Unable to add to waitlist.";
@@ -95,7 +112,18 @@ export default function WaitlistForm() {
             label="Email"
             id="email"
           />
-          <Button type="submit" isLoading={isSubmitting}>
+          <div className="pb-2">
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_SITE_KEY || ""}
+              ref={captchaRef}
+              onChange={onChange}
+            />
+          </div>
+          <Button
+            disabled={!enableSubmit}
+            type="submit"
+            isLoading={isSubmitting}
+          >
             Submit
           </Button>
         </form>
