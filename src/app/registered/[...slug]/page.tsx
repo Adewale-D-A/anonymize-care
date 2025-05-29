@@ -17,7 +17,7 @@ export default async function RegisteredSuccesssfully(props: {
           <p>
             Your nickname{" "}
             <span className="font-semibold text-secondary text-lg">
-              adewaled
+              {params?.slug?.[0]}
             </span>{" "}
             is now your username.
           </p>
@@ -25,7 +25,7 @@ export default async function RegisteredSuccesssfully(props: {
           <div className="bg-gray-100 p-4 rounded-lg">
             <p className="text-sm text-gray-600 mb-1">Your passcode:</p>
             <p className="text-xl font-mono font-bold text-gray-900">
-              LkIht7S4WKrPOLV
+              {params?.slug?.[1]}
             </p>
           </div>
 
