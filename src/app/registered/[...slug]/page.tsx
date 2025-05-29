@@ -1,4 +1,6 @@
+import CopyContent from "@/component/button/copy";
 import CheckIcon from "@/static/icons/check";
+import CopyIcon from "@/static/icons/copy";
 import Link from "next/link";
 
 type Params = Promise<{ slug: string[] }>;
@@ -24,8 +26,8 @@ export default async function RegisteredSuccesssfully(props: {
 
           <div className="bg-gray-100 p-4 rounded-lg">
             <p className="text-sm text-gray-600 mb-1">Your passcode:</p>
-            <p className="text-xl font-mono font-bold text-gray-900">
-              {params?.slug?.[1]}
+            <p className="text-xl font-mono font-bold text-gray-900 flex items-center gap-3">
+              {params?.slug?.[1]} <CopyContent content={params?.slug?.[1]} />
             </p>
           </div>
 
