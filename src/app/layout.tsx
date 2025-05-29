@@ -51,8 +51,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${centuryGothic.variable} antialiased`}>
-        {children}
+      <body className={`${centuryGothic.variable} antialiased   `}>
+        <div className="w-full bg-[url('/images/medic-bg.png')] bg-right bg-no-repeat bg-blend-darken bg-black/60 bg-cover">
+          {children}
+        </div>
       </body>
     </html>
   );

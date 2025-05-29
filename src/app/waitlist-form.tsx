@@ -5,12 +5,19 @@ import { SyntheticEvent, useCallback, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Button from "@/component/button";
 import AlertModal from "@/component/infoModal/alert-modal";
-import TextInput from "@/component/input/text";
 import { Logo } from "@/component/logo";
+import CheckNicknameAvailability from "@/component/input/check-nickname-availability";
+import { useRouter } from "next/navigation";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASEURL;
+const header = {
+  headers: {
+    "Content-Type": "application/json",
+  },
+};
 export default function WaitlistForm() {
   const captchaRef = useRef<any>(null);
+  const router = useRouter();
   const [openAlert, setOpenAlert] = useState(false);
   const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(false);
@@ -41,24 +48,36 @@ export default function WaitlistForm() {
       }
       try {
         setIsSubmitting(true);
+        const response = await axios.post(
+          `${BASE_URL}/anonymous-signup`,
+          {
+            nickname,
+          },
+          header
+        );
+        const result = response?.data as {
+          message: string;
+          userId: string;
+          password: string;
+          email: string;
+          nickname: string;
+          token: string;
+        };
         await axios.post(
           `${BASE_URL}/waitlist`,
           {
-            email: email,
+            email: result?.email,
             nickname: nickname,
           },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
+          header
         );
-        setMessage("Successfully added to the waitlist.");
-        setOpenAlert(true);
-        setNickname("");
-        setEmail("");
         captchaRef?.current?.reset();
         setEnableSubmit(false);
+        router.push(`/registered/${nickname}/${result?.password}`);
+        // setMessage("Successfully added to the waitlist.");
+        // setOpenAlert(true);
+        // setNickname("");
+        // setEmail("");
       } catch (error: any) {
         const mssg =
           error?.response?.data?.message || "Unable to add to waitlist.";
@@ -94,16 +113,10 @@ export default function WaitlistForm() {
           </div>
         </div>
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5">
-          <TextInput
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
-            required
-            placeholder="Nickname"
-            type="text"
-            label="Nickname"
-            id="nick-name"
+          <CheckNicknameAvailability
+            {...{ value: nickname, setValue: setNickname }}
           />
-          <TextInput
+          {/* <TextInput
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -111,7 +124,7 @@ export default function WaitlistForm() {
             type="email"
             label="Email"
             id="email"
-          />
+          /> */}
           <div className="pb-2">
             <ReCAPTCHA
               sitekey={process.env.NEXT_PUBLIC_SITE_KEY || ""}
