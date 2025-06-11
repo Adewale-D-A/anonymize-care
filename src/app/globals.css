@@ -53,6 +53,15 @@ body {
 
 /* theme toggle */
 
+/* right-left flare */
+.bottom-flare-green {
+  background:
+linear-gradient(180deg, rgba(164, 237, 142, 0) 36.97%, #A4ED8E 100%);
+}
+.bottom-flare-blue {
+  background:
+linear-gradient(180deg, rgba(164, 237, 142, 0) 36.97%, #007CD7 100%);
+}
 
 @keyframes slideBounceIn {
   0% {

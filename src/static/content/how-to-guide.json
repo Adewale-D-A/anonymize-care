@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "Create your account.",
+    "description": "Create your account on the website or in the app. It's free, there is no obligation or membership, and you don't need to enter a credit card. Follow the prompts to enter your health insurance or employer to see if your visit is covered. However, insurance is  not necessary."
+  },
+  {
+    "id": "2",
+    "title": "See the next available provider, or schedule your appointment..",
+    "description": "Select the reason for your visit and answer a few questions to provide the doctor with some context. See a doctor in minutes or schedule your therapy or psychiatry visit. You must be signed to your account either on the app (phone) or through our website (computer) to visit with a provider."
+  },
+  {
+    "id": "3",
+    "title": "Start your virtual doctor visit.",
+    "description": "Meet with one of our board-certified doctors, nurse practitioners, or clinician who will diagnose your symptoms and offer a custom treatment plan. If needed, you can get prescriptions sent to your local pharmacy."
+  }
+]
