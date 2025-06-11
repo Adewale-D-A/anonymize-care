@@ -12,7 +12,7 @@ export const Logo = () => {
         width={200}
         height={200}
         alt="anonymizeCare"
-        className="md:w-[150px] w-[100px]"
+        className="md:h-[60px] h-[40px] w-auto"
       />
     </Link>
   );

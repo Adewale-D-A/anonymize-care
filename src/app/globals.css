@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
-:root {
-  --background: #1e1e1d;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* :root {
+  --background: #454544;
   --foreground: #ededed;
-}
+} */
 @font-face {
   font-family: CenturyGothic;
   src: url("../static//font//CenturyGothic.ttf") format("ttf");
 }
 @theme {
-  --color-primary: #A4ED8E;
+  --color-primary: #4DEF1E;
   --color-secondary: #007CD7;
   --color-dark-ash-900: #0a0a09;
   --color-dark-ash-700: #1e1e1d;
@@ -17,19 +19,55 @@
   --color-destructive: red;
   --font-century: CenturyGothic, sans-serif
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #454544;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
 }
 
+/* theme toggle */
 
+.toggle-input:checked + .slider {
+  background-color: #0a0a09;
+}
+
+.toggle-input:focus + .slider {
+  box-shadow: 0 0 1px #0a0a09;
+}
+
+.toggle-input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+.slider:before {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* theme toggle */
+
+
+@keyframes slideBounceIn {
+  0% {
+    transform: translateY(-200%) scaleX(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%) scaleX(1);
+  }
+}
+
+.nav-into {
+  animation: slideBounceIn 1s ease-out forwards;
+  transform-origin: center top;
+}
 .backgdrop-bg-filter {
   background-color: rgba(0, 134, 211, 0.2);
   backdrop-filter: blur(16px);

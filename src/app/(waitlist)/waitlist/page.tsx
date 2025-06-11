@@ -8,10 +8,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full bg-[url('/images/medic-bg.png')] bg-right bg-no-repeat bg-blend-darken bg-black/60 bg-cover">
-      <main className=" w-full h-screen flex justify-center items-center px-3 ">
-        <WaitlistForm />
-      </main>
-    </div>
+    <main className=" w-full h-screen flex justify-center items-center px-3 ">
+      <WaitlistForm />
+    </main>
   );
 }

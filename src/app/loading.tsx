@@ -1,0 +1,11 @@
+import Loader from "@/component/loader";
+
+export default function Loading() {
+  return (
+    <div className=" w-full h-screen flex justify-center items-center">
+      <Loader isLoading={true}>
+        <p>...Loading</p>
+      </Loader>
+    </div>
+  );
+}

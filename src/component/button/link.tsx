@@ -1,9 +1,9 @@
 "use client";
-import LoadingIcon from "@/static/icons/loading";
 import { cn } from "@/utils/cn";
-import React, { ButtonHTMLAttributes } from "react";
+import React, { AnchorHTMLAttributes } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-const buttonVariants = cva(
+import Link, { LinkProps } from "next/link";
+const linkVariants = cva(
   "inline-flex items-center justify-center font-semibold whitespace-nowrap rounded-md text-sm  transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 cursor-pointer bg-primary text-black shadow  w-full text-center border-2 border-primary-dull hover:scale-105 px-2 py-3",
   {
     variants: {
@@ -30,30 +30,30 @@ const buttonVariants = cva(
     },
   }
 );
-interface ButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  children: React.ReactNode;
-  isLoading?: boolean;
+interface LinkProp
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    VariantProps<typeof linkVariants> {
+  href: string; // required
+  as?: string;
+  replace?: boolean;
+  scroll?: boolean;
+  shallow?: boolean;
+  prefetch?: boolean;
+  locale?: string | false;
+  passHref?: boolean;
+  legacyBehavior?: boolean;
 }
 
-export default function Button({
+export default function CustomLink({
   children,
   variant,
   size,
-  isLoading,
-  disabled,
   className,
   ...rest
-}: ButtonProps) {
+}: LinkProp) {
   return (
-    <button
-      {...rest}
-      disabled={isLoading || disabled}
-      className={cn(buttonVariants({ variant, size, className }))}
-    >
-      {" "}
-      {isLoading ? <LoadingIcon className=" h-4 w-4 animate-spin" /> : children}
-    </button>
+    <Link {...rest} className={cn(linkVariants({ variant, size, className }))}>
+      {children}
+    </Link>
   );
 }

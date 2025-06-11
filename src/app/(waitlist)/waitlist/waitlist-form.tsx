@@ -132,13 +132,15 @@ export default function WaitlistForm() {
               onChange={onChange}
             />
           </div>
-          <Button
-            disabled={!enableSubmit}
-            type="submit"
-            isLoading={isSubmitting}
-          >
-            Submit
-          </Button>
+          <div className="flex justify-center">
+            <Button
+              disabled={!enableSubmit}
+              type="submit"
+              isLoading={isSubmitting}
+            >
+              Submit
+            </Button>
+          </div>
         </form>
       </div>
       <AlertModal
