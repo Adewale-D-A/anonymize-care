@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import features from "@/static/content/features.json";
 import Link from "next/link";
+import PricingOptions from "@/component/pricing-options";
 
 export const metadata: Metadata = {
   title: "AnonymizeCare",
@@ -66,7 +67,22 @@ export default function Home() {
         </div>
       </section>
       {/* book an apaointment section */}
-      <section></section>
+      <section className="w-full flex justify-center flex-col items-center bg-primary/25 text-dark-ash-900 dark:text-white">
+        <div className=" w-full max-w-7xl px-5 lg:px-10 my-24 flex flex-col items-center gap-12">
+          <div className="w-full max-w-5xl text-center flex flex-col items-center gap-5">
+            <p>Book an appointment</p>
+            <h2 className=" text-center text-3xl font-bold">
+              See a doctor with or without insurance
+            </h2>
+            <p className=" max-w-xl">
+              We partner with leading health plans to serve millions of members
+              around the country. Your AnonymizeCare visit may be as low as
+              N0/visit.
+            </p>
+          </div>{" "}
+          <PricingOptions />
+        </div>
+      </section>
       {/* introduction section */}
       <section></section>
       {/* request form */}

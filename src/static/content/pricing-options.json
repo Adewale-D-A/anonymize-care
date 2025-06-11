@@ -1,0 +1,84 @@
+{
+  "insured": {
+    "id": "1",
+    "description": "Insured pricing options.",
+    "sections": [
+      {
+        "title": "Certified Physician",
+        "pricing": [
+          {
+            "amount": 2000,
+            "currency": "NGN",
+            "time": 10
+          }
+        ]
+      },
+      {
+        "title": "Physician",
+        "pricing": [
+          {
+            "amount": 10000,
+            "currency": "NGN",
+            "time": 20
+          },
+          {
+            "amount": 20000,
+            "currency": "NGN",
+            "time": 30
+          }
+        ]
+      },
+      {
+        "title": "Doctors",
+        "pricing": [
+          {
+            "amount": 100000,
+            "currency": "NGN",
+            "time": 50
+          }
+        ]
+      }
+    ]
+  },
+  "uninsured": {
+    "id": "2",
+    "description": "Figma ipsum component variant main layer. Plugin device overflow comment move link blur. Device background link duplicate italic align ipsum distribute figma. Component align vector shadow outline. Font distribute rectangle stroke polygon pixel font layer layout.",
+    "sections": [
+      {
+        "title": "Certified Physician",
+        "pricing": [
+          {
+            "amount": 2000,
+            "currency": "NGN",
+            "time": 10
+          }
+        ]
+      },
+      {
+        "title": "Physician",
+        "pricing": [
+          {
+            "amount": 10000,
+            "currency": "NGN",
+            "time": 20
+          },
+          {
+            "amount": 20000,
+            "currency": "NGN",
+            "time": 30
+          }
+        ]
+      },
+      {
+        "title": "Doctors",
+        "pricing": [
+          {
+            "amount": 100000,
+            "currency": "NGN",
+            "time": 50
+          }
+        ]
+      }
+    ]
+  }
+}
