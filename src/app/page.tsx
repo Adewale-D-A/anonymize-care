@@ -16,6 +16,9 @@ import howToGuide from "@/static/content/how-to-guide.json";
 import anonymizeCarePathway from "@/static/content/anonymize-care-pathway.json";
 import CustomLink from "@/component/button/link";
 import { cn } from "@/utils/cn";
+import ContactForm from "@/component/contactForm";
+import SubscribeToNewsletter from "@/component/contactForm/subscribe";
+import FooterMenu from "@/component/footer";
 
 export const metadata: Metadata = {
   title: "AnonymizeCare",
@@ -173,11 +176,46 @@ export default function Home() {
         </div>
       </section>
       {/* request form */}
-      <section></section>
+      <section
+        id="contact"
+        className="w-full flex justify-center flex-col items-center transition-all bg-white dark:bg-dark-ash-500 text-dark-ash-900 dark:text-white"
+      >
+        <div className=" w-full max-w-7xl px-5 lg:px-10 my-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className=" w-full h-full">
+            <Image
+              src={"/images/request-a-call.jpg"}
+              alt="request-a-call"
+              height={500}
+              width={500}
+              className=" w-full h-full object-cover"
+            />
+          </div>
+          <div className=" text-left flex flex-col gap-5">
+            <p className=" text-secondary">Want to Speak to us Directly?</p>
+            <h2 className="text-3xl font-bold">Request a Call Back</h2>
+            <p className=" max-w-xl">
+              Would you like to speak to one of our technology specialist over
+              the phone? Just submit your details and we’ll be in touch
+              shortly.You can also SEND AN EMAIL if you would prefer.
+            </p>
+            <ContactForm />
+          </div>
+        </div>
+      </section>
       {/* subscribe section */}
-      <section></section>
+      <section className="w-full flex justify-center flex-col items-center transition-all bg-secondary text-white">
+        <div className=" w-full max-w-7xl px-5 lg:px-10 my-24 flex flex-col items-center gap-12">
+          <div className="w-full max-w-5xl text-center flex flex-col items-center gap-5">
+            <h2 className=" text-center text-3xl font-bold">
+              Subscribe to our newsletter
+            </h2>
+            <p>Be the first to get the latest updates from AnonymizeCare</p>
+          </div>
+          <SubscribeToNewsletter />
+        </div>
+      </section>
       {/* footer  */}
-      <footer></footer>
+      <FooterMenu />
       <div className=" fixed bottom-10 right-16 z-50">
         <ThemeModeToggle />
       </div>

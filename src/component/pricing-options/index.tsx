@@ -53,7 +53,7 @@ export default function PricingOptions() {
               </div>
             ))}
           </div>
-          <CustomLink href="#">Let&apos;s Talk</CustomLink>
+          <CustomLink href="#contact">Let&apos;s Talk</CustomLink>
         </div>
         <p>
           Figma ipsum component variant main layer. Plugin device overflow

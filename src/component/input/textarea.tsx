@@ -1,10 +1,10 @@
 export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label: string;
   id: string;
 }
 
-export default function TextInput({
+export default function TextAreaInput({
   className,
   label,
   id,
@@ -13,9 +13,10 @@ export default function TextInput({
   return (
     <div className=" flex flex-col gap-2">
       <label htmlFor={id}>{label}</label>
-      <input
+      <textarea
         {...rest}
         id={id}
+        rows={5}
         className="flex py-3 w-full shadow-none rounded-md px-3 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 bg-transparent border border-gray-200 dark:border-none dark:bg-dark-ash-700 text-white placeholder:text-dark-ash-500"
       />
     </div>

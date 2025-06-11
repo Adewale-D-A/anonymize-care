@@ -21,7 +21,7 @@ export default function NavMenu() {
             },
             {
               id: "3",
-              label: "Individual",
+              label: "Sexual & Reproductive Health",
               url: "#",
             },
           ].map((item) => (
@@ -38,7 +38,7 @@ export default function NavMenu() {
           >
             Sign in
           </CustomLink>
-          <CustomLink href="#">Let&apos;s Talk</CustomLink>
+          <CustomLink href="#contact">Let&apos;s Talk</CustomLink>
         </div>
       </div>
     </nav>
