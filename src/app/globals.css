@@ -63,6 +63,13 @@ linear-gradient(180deg, rgba(164, 237, 142, 0) 36.97%, #A4ED8E 100%);
 linear-gradient(180deg, rgba(164, 237, 142, 0) 36.97%, #007CD7 100%);
 }
 
+.backdrop-bg-filter {
+  background-color: rgb(54, 79, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
 @keyframes slideBounceIn {
   0% {
     transform: translateY(-200%) scaleX(0.1);

@@ -1,3 +1,7 @@
+##### 12.06.2025
+
+> Feature: Nav menu update
+
 ##### 11.06.2025
 
 > Feature: Website UI completed

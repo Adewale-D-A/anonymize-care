@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { Logo } from "../logo";
 import CustomLink from "../button/link";
+import NavItems from "./nav-items";
 
 export default function NavMenu() {
   return (
@@ -8,27 +8,7 @@ export default function NavMenu() {
       <div className=" flex w-[90%] justify-between items-center gap-4 p-3 px-10 fixed top-3 z-50 transition-all dark:bg-dark-ash-500 bg-white rounded-full shadow-sm shadow-primary overflow-x-clip nav-into">
         <Logo />
         <div className="w-full hidden text-sm lg:flex max-w-lg items-center justify-between font-semibold text-dark-ash-900 dark:text-white">
-          {[
-            {
-              id: "1",
-              label: "Urgent Care",
-              url: "#",
-            },
-            {
-              id: "2",
-              label: "Mental Health",
-              url: "#",
-            },
-            {
-              id: "3",
-              label: "Sexual & Reproductive Health",
-              url: "#",
-            },
-          ].map((item) => (
-            <Link key={item?.id} href={item?.url}>
-              {item?.label}
-            </Link>
-          ))}
+          <NavItems />
         </div>
         <div className=" flex items-center gap-5">
           <CustomLink

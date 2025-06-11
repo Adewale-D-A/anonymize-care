@@ -7,7 +7,7 @@
         "title": "Certified Physician",
         "pricing": [
           {
-            "amount": 2000,
+            "amount": 5000,
             "currency": "NGN",
             "time": 10
           }
@@ -17,12 +17,12 @@
         "title": "Physician",
         "pricing": [
           {
-            "amount": 10000,
+            "amount": 80000,
             "currency": "NGN",
             "time": 20
           },
           {
-            "amount": 20000,
+            "amount": 15000,
             "currency": "NGN",
             "time": 30
           }
@@ -32,7 +32,7 @@
         "title": "Doctors",
         "pricing": [
           {
-            "amount": 100000,
+            "amount": 75000,
             "currency": "NGN",
             "time": 50
           }
