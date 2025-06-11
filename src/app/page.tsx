@@ -1,15 +1,27 @@
-import WaitlistForm from "./waitlist-form";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "AnonymizeCare Waitlist",
-  description:
-    "Be the first to experience the future of secure, anonymous healthcare. Sign up now to join the AnonymizeCare waitlist and get early access to exclusive features and updates.",
+  title: "AnonymizeCare",
+  description: "Welcome to anonymizeCare.",
 };
 
 export default function Home() {
   return (
-    <main className=" w-full h-screen flex justify-center items-center px-3 ">
-      <WaitlistForm />
+    <main className=" w-full  px-3 ">
+      <nav></nav>
+      {/* hero section */}
+      <section className=" w-full h-screen"></section>
+      {/* features section */}
+      <section></section>
+      {/* book an apaointment section */}
+      <section></section>
+      {/* introduction section */}
+      <section></section>
+      {/* request form */}
+      <section></section>
+      {/* subscribe section */}
+      <section></section>
+      {/* footer  */}
+      <footer></footer>
     </main>
   );
 }
