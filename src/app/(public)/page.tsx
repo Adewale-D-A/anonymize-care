@@ -32,8 +32,9 @@ export default function Home() {
           </div>
         </section>
         {/* hero section */}
-        <section className="w-full h-screen flex justify-center bg-[url('/images/hero-banner.jpg')] bg-right bg-no-repeat bg-cover rounded-b-3xl py-0 px-5 lg:py-16">
-          <div className="h-full max-w-screen-xl w-full flex justify-center items-center lg:justify-end lg:items-end">
+        <section className="w-full h-screen relative flex justify-center bg-[url('/images/hero-banner.jpg')] bg-right bg-no-repeat bg-cover rounded-b-3xl py-0 px-5 lg:py-16">
+          <div className=" w-full h-full absolute top-0 left-0 bg-[url('/images/hero-gif-2.gif')] bg-right bg-no-repeat bg-cover opacity-20"></div>
+          <div className="h-full max-w-screen-xl w-full flex justify-center items-center lg:justify-end lg:items-end z-10">
             <HeroInfoContent />
           </div>
         </section>
