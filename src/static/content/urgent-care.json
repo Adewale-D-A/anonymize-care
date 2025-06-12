@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "label": "Infection",
+    "value": "infection",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Infection",
+      "description": "Infection is a condition caused by harmful microorganisms invading the body, requiring prompt diagnosis and treatment."
+    }
+  },
+  {
+    "id": "2",
+    "label": "Sprains",
+    "value": "sprains",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Sprains",
+      "description": "Sprains involve stretched or torn ligaments, commonly affecting the ankle or wrist, and are treated with rest and support."
+    }
+  },
+  {
+    "id": "3",
+    "label": "Burns",
+    "value": "burns",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Burns",
+      "description": "Burns are injuries to the skin caused by heat, chemicals, or electricity and require immediate care depending on severity."
+    }
+  },
+  {
+    "id": "4",
+    "label": "Allergic Reactions",
+    "value": "allergic-reactions",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Allergic Reactions",
+      "description": "Allergic reactions can range from mild to life-threatening and often require urgent medical intervention to manage symptoms."
+    }
+  },
+  {
+    "id": "5",
+    "label": "Fractures",
+    "value": "fractures",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Fractures",
+      "description": "Fractures are broken bones caused by trauma or stress and typically require imaging, stabilization, and treatment."
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "label": "Anxiety",
+    "value": "anxiety",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Anxiety",
+      "description": "Anxiety is a mental health condition characterized by excessive worry, fear, and physical symptoms like restlessness or rapid heartbeat."
+    }
+  },
+  {
+    "id": "2",
+    "label": "Depression",
+    "value": "depression",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Depression",
+      "description": "Depression is a mood disorder marked by persistent feelings of sadness, hopelessness, and a loss of interest in daily activities."
+    }
+  },
+  {
+    "id": "3",
+    "label": "Panic Attacks",
+    "value": "panic-attacks",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Panic Attacks",
+      "description": "Panic attacks are sudden episodes of intense fear with physical symptoms such as chest pain, shortness of breath, and dizziness."
+    }
+  },
+  {
+    "id": "4",
+    "label": "PTSD",
+    "value": "ptsd",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Post-Traumatic Stress Disorder",
+      "description": "PTSD is a condition triggered by traumatic events, leading to flashbacks, nightmares, and severe anxiety that disrupt daily life."
+    }
+  },
+  {
+    "id": "5",
+    "label": "Insomnia",
+    "value": "insomnia",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Insomnia",
+      "description": "Insomnia involves difficulty falling or staying asleep, often linked to stress, anxiety, or other mental health issues."
+    }
+  }
+]

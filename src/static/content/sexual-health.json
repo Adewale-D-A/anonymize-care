@@ -1,0 +1,52 @@
+[
+  {
+    "id": "9",
+    "label": "Sexually Transmitted Infections",
+    "value": "stis",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Sexually Transmitted Infections",
+      "description": "STIs are infections transmitted through sexual contact, often requiring testing and timely treatment to prevent complications."
+    }
+  },
+  {
+    "id": "10",
+    "label": "Birth Control",
+    "value": "birth-control",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Birth Control",
+      "description": "Birth control methods help prevent pregnancy and include options like pills, implants, IUDs, and condoms, tailored to individual needs."
+    }
+  },
+  {
+    "id": "11",
+    "label": "Menstrual Health",
+    "value": "menstrual-health",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Menstrual Health",
+      "description": "Menstrual health covers the physical and emotional aspects of menstruation, including cycle tracking, pain management, and hygiene."
+    }
+  },
+  {
+    "id": "12",
+    "label": "Pregnancy Testing",
+    "value": "pregnancy-testing",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Pregnancy Testing",
+      "description": "Pregnancy testing determines if a person is pregnant by detecting hormones in urine or blood, often used for early confirmation."
+    }
+  },
+  {
+    "id": "13",
+    "label": "Emergency Contraception",
+    "value": "emergency-contraception",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Emergency Contraception",
+      "description": "Emergency contraception helps prevent pregnancy after unprotected sex or contraceptive failure, most effective when taken promptly."
+    }
+  }
+]
