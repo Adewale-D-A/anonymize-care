@@ -9,13 +9,14 @@
 @font-face {
   font-family: CenturyGothic;
   src: url("../static//font//CenturyGothic.ttf") format("ttf");
+  /* color: #141c2a */
 }
 @theme {
-  --color-primary: #4DEF1E;
+  --color-primary: #2E9511;
   --color-secondary: #007CD7;
-  --color-dark-ash-900: #0a0a09;
-  --color-dark-ash-700: #1e1e1d;
-  --color-dark-ash-500: #454544;
+  --color-dark-ash-900: #020617;
+  --color-dark-ash-700: #141c2a;
+  --color-dark-ash-500: #1e293b;
   --color-destructive: red;
   --font-century: CenturyGothic, sans-serif
 }
@@ -30,6 +31,66 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+.webkit-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+/* gradient */
+.styled-gradient {
+background: linear-gradient(to right, white 60%, #2E9511 80%, #007CD7 100%);
+}
+/* gradient */
+.blurry{
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  backdrop-filter: blur(10px);  
+  }
+/* intro animation */
+
+.loader-ctn {
+  animation: moveone 3s ease-in-out 1;
+  transition: all;
+  transform: scaleX(0);
+}
+.loader-ctn-2 {
+  animation: movetwo 3s ease-in-out 1;
+  transition: all;
+  transform: scaleX(0);
+}
+
+@keyframes moveone {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: right;
+    background-color: #f4d048;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+
+@keyframes movetwo {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: #33347e;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+/* intro animation */
+
 
 /* theme toggle */
 
@@ -64,9 +125,9 @@ linear-gradient(180deg, rgba(164, 237, 142, 0) 36.97%, #007CD7 100%);
 }
 
 .backdrop-bg-filter {
-  background-color: rgb(54, 79, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 5px;
 }
 

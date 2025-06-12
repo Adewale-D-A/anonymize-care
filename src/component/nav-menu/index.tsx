@@ -1,14 +1,34 @@
 import { Logo } from "../logo";
 import CustomLink from "../button/link";
-import NavItems from "./nav-items";
+import Link from "next/link";
 
 export default function NavMenu() {
   return (
-    <nav className="w-full flex justify-center ">
-      <div className=" flex w-[90%] justify-between items-center gap-4 p-3 px-10 fixed top-3 z-50 transition-all dark:bg-dark-ash-500 bg-white rounded-full shadow-sm shadow-primary overflow-x-clip nav-into">
+    <nav className="w-full blurry flex justify-center sticky webkit-sticky top-0 left-0 z-50 transition-all shadow-sm shadow-primary overflow-x-clip nav-into">
+      <div className="flex w-full max-w-screen-xl justify-between items-center gap-4 px-3 py-2">
         <Logo />
         <div className="w-full hidden text-sm lg:flex max-w-lg items-center justify-between font-semibold text-dark-ash-900 dark:text-white">
-          <NavItems />
+          {[
+            {
+              id: "1",
+              label: "Urgent Care",
+              url: "#",
+            },
+            {
+              id: "2",
+              label: "Mental Health",
+              url: "#",
+            },
+            {
+              id: "3",
+              label: "Sexual & Reproductive Health",
+              url: "#",
+            },
+          ].map((item) => (
+            <Link href={item?.url} key={item?.id}>
+              {item?.label}
+            </Link>
+          ))}
         </div>
         <div className=" flex items-center gap-5">
           <CustomLink

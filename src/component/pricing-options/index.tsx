@@ -35,7 +35,7 @@ export default function PricingOptions() {
           </button>
         ))}
       </div>
-      <div className=" w-full min-w-full flex flex-col gap-4 flex-1 lg:flex-[0.7]">
+      <div className=" w-full flex flex-col gap-4 flex-1 lg:flex-[0.7]">
         <div className=" w-full transition-all rounded-4xl bg-white dark:bg-dark-ash-700 p-5 lg:p-8 flex flex-col gap-16">
           <p>{options?.description}</p>
           <div className="w-full flex flex-col  gap-5">
