@@ -26,7 +26,10 @@ export default function Home() {
               <span className=" font-bold">NHS GP practices:</span> celebrate
               your impact with 6 months free Heidi.
             </h5>{" "}
-            <CustomLink href="#contact" className=" rounded-xl">
+            <CustomLink
+              href="#contact"
+              className=" bg-white text-primary border-none"
+            >
               Get Started
             </CustomLink>
           </div>

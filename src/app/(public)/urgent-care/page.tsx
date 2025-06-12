@@ -1,8 +1,8 @@
-import CustomLink from "@/component/button/link";
 import HowItWorks from "@/component/how-it-works";
 import MenuSections from "@/component/menu-sections";
 import { Metadata } from "next";
 import urgentCareContent from "@/static/content/urgent-care.json";
+import StoreBadges from "@/component/store";
 
 export const metadata: Metadata = {
   title: "Urgent Care",
@@ -17,7 +17,7 @@ export default function UrgentCare() {
         <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className=" w-full h-full">
             <h2 className="text-3xl font-bold">
-              AnonymizeCare online docotor visit costs between $0- $99
+              AnonymizeCare online doctor visit costs between $0- $99
             </h2>
           </div>
           <div className=" text-left flex flex-col gap-5">
@@ -28,9 +28,7 @@ export default function UrgentCare() {
               outline. Font distribute rectangle stroke polygon pixel font layer
               layout.
             </p>
-            <CustomLink variant={"transparent"} href="/#contact">
-              For Hospitals
-            </CustomLink>
+            <StoreBadges />
           </div>
         </div>
       </section>

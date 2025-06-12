@@ -1,5 +1,6 @@
 ##### 12.06.2025
 
+> Update: Face uplift
 > Feature: Hero section banner page gif addition
 > Feature: Menu items page development
 > Update: UI theming and face uplift

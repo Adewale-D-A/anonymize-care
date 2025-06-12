@@ -1,52 +1,93 @@
 [
   {
-    "id": "9",
-    "label": "Sexually Transmitted Infections",
-    "value": "stis",
+    "id": "1",
+    "label": "STI Screening",
+    "value": "sti-screening",
+    "icon": "/images/icons/allergy.png",
     "content": {
       "image": "/images/iphone-prototype.png",
-      "title": "Sexually Transmitted Infections",
-      "description": "STIs are infections transmitted through sexual contact, often requiring testing and timely treatment to prevent complications."
+      "title": "STI Screening",
+      "description": "Screening for sexually transmitted infections is crucial for early detection and treatment, helping to prevent complications and transmission.",
+      "for": "Ages 16+ (Parental consent under 18 may apply)",
+      "time": "5–10 mins"
     }
   },
   {
-    "id": "10",
-    "label": "Birth Control",
-    "value": "birth-control",
+    "id": "2",
+    "label": "Contraception",
+    "value": "contraception",
+    "icon": "/images/icons/allergy.png",
     "content": {
       "image": "/images/iphone-prototype.png",
-      "title": "Birth Control",
-      "description": "Birth control methods help prevent pregnancy and include options like pills, implants, IUDs, and condoms, tailored to individual needs."
+      "title": "Contraception",
+      "description": "Access to contraceptive methods helps individuals plan pregnancies and manage reproductive health safely and effectively.",
+      "for": "Ages 15+",
+      "time": "5 mins or less"
     }
   },
   {
-    "id": "11",
-    "label": "Menstrual Health",
-    "value": "menstrual-health",
-    "content": {
-      "image": "/images/iphone-prototype.png",
-      "title": "Menstrual Health",
-      "description": "Menstrual health covers the physical and emotional aspects of menstruation, including cycle tracking, pain management, and hygiene."
-    }
-  },
-  {
-    "id": "12",
+    "id": "3",
     "label": "Pregnancy Testing",
     "value": "pregnancy-testing",
+    "icon": "/images/icons/allergy.png",
     "content": {
       "image": "/images/iphone-prototype.png",
       "title": "Pregnancy Testing",
-      "description": "Pregnancy testing determines if a person is pregnant by detecting hormones in urine or blood, often used for early confirmation."
+      "description": "Pregnancy tests provide quick and reliable results and are the first step in confirming pregnancy for further care planning.",
+      "for": "Ages 13+",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "4",
+    "label": "Antenatal Care",
+    "value": "antenatal-care",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Antenatal Care",
+      "description": "Antenatal care ensures the health of the mother and baby through regular checkups, screenings, and guidance throughout pregnancy.",
+      "for": "Pregnant individuals",
+      "time": "10 mins"
+    }
+  },
+  {
+    "id": "5",
+    "label": "Menstrual Health",
+    "value": "menstrual-health",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Menstrual Health",
+      "description": "Menstrual health includes cycle tracking, managing discomfort, and promoting hygiene, all essential to reproductive well-being.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
     }
   },
   {
     "id": "13",
-    "label": "Emergency Contraception",
-    "value": "emergency-contraception",
+    "label": "Abortion",
+    "value": "abortion",
+    "icon": "/images/icons/allergy.png",
     "content": {
       "image": "/images/iphone-prototype.png",
-      "title": "Emergency Contraception",
-      "description": "Emergency contraception helps prevent pregnancy after unprotected sex or contraceptive failure, most effective when taken promptly."
+      "title": "Abortion",
+      "description": "Abortion refers to the medical or surgical termination of a pregnancy. It involves important health, legal, and emotional considerations and should be conducted in a safe, legal, and supportive environment.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "14",
+    "label": "Molestation",
+    "value": "molestation",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Molestation",
+      "description": "Molestation involves unwanted or inappropriate sexual behavior, often towards someone unable to consent. It is a serious violation that requires support, legal protection, and access to counseling and justice.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
     }
   }
 ]

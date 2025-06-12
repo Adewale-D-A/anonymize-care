@@ -45,12 +45,13 @@ export default function NavMenu() {
         <div className=" flex items-center gap-5">
           <CustomLink
             variant={"transparent"}
-            href="/waitlist"
+            href="https://www.7thcare.com/"
+            target="_blank"
             className=" hidden lg:block"
           >
-            Sign in
+            For Hospitals
           </CustomLink>
-          <CustomLink href="/#contact">Let&apos;s Talk</CustomLink>
+          <CustomLink href="/#contact">Talk To Us</CustomLink>
         </div>
       </div>
     </nav>

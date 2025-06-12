@@ -9,7 +9,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary h-fit text-white border rounded-full w-fit p-3 lg:p-3 px-10 lg:px-18",
+          "bg-primary h-fit text-white border-none border-primary rounded-full w-fit p-3 px-14",
         transparent:
           "bg-transparent h-fit text-primary border border-primary rounded-full w-fit p-3 px-14",
         urgent: "bg-red-500 border-0 text-white hover:bg-red-500/80",
