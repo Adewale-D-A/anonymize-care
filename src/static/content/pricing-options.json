@@ -1,0 +1,41 @@
+{
+  "insured": {
+    "id": "1",
+    "description": "Monthly consultations with 7thCare consultants at zero cost to you as a patient.",
+    "sections": [
+      {
+        "title": "Consultation Fee",
+        "pricing": [
+          {
+            "plan": "₦0 monthly",
+            "extra-text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "uninsured": {
+    "id": "2",
+    "description": "No insurance? No problem. All consultations are affordable, transparent, and private—so you can get help when you need it, no questions asked.",
+    "sections": [
+      {
+        "title": "Subscription",
+        "pricing": [
+          {
+            "plan": "₦10,000 monthly",
+            "extra-text": "2 Free consultations"
+          }
+        ]
+      },
+      {
+        "title": "Consultation Fee",
+        "pricing": [
+          {
+            "plan": "₦10,000 for 30 mins consultation",
+            "extra-text": ""
+          }
+        ]
+      }
+    ]
+  }
+}

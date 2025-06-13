@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "image": "/images/medical-consultant.jpg",
+    "title": "Medical Consultant"
+  },
+  {
+    "id": "2",
+    "image": "/images/patient-users.jpg",
+    "title": "Patient User"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "label": "STI Screening",
+    "value": "sti-screening",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "STI Screening",
+      "description": "Screening for sexually transmitted infections is crucial for early detection and treatment, helping to prevent complications and transmission.",
+      "for": "Ages 16+ (Parental consent under 18 may apply)",
+      "time": "5–10 mins"
+    }
+  },
+  {
+    "id": "4",
+    "label": "Antenatal Care",
+    "value": "antenatal-care",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Antenatal Care",
+      "description": "Antenatal care ensures the health of the mother and baby through regular checkups, screenings, and guidance throughout pregnancy.",
+      "for": "Pregnant individuals",
+      "time": "10 mins"
+    }
+  },
+  {
+    "id": "5",
+    "label": "Menstrual Health",
+    "value": "menstrual-health",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Menstrual Health",
+      "description": "Menstrual health includes cycle tracking, managing discomfort, and promoting hygiene, all essential to reproductive well-being.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "13",
+    "label": "Abortion",
+    "value": "abortion",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Abortion",
+      "description": "Abortion refers to the medical or surgical termination of a pregnancy. It involves important health, legal, and emotional considerations and should be conducted in a safe, legal, and supportive environment.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "14",
+    "label": "Molestation",
+    "value": "molestation",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Molestation",
+      "description": "Molestation involves unwanted or inappropriate sexual behavior, often towards someone unable to consent. It is a serious violation that requires support, legal protection, and access to counseling and justice.",
+      "for": "Ages 10+",
+      "time": "5 mins or less"
+    }
+  }
+]

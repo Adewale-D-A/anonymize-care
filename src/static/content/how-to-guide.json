@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Choose a Nickname",
+    "description": "Pick any name. This is how your consultant will refer to you—no email, no photo, no real name required."
+  },
+  {
+    "id": "2",
+    "title": "Match with a Consultant",
+    "description": "We’ll connect you with a licensed healthcare provider based on your needs—instantly and anonymously."
+  },
+  {
+    "id": "3",
+    "title": "Begin Your Virtual Consultation",
+    "description": "Secure video or chat consultation—your health concerns addressed from anywhere."
+  },
+  {
+    "id": "4",
+    "title": "Receive Your Report & Prescriptions",
+    "description": "Get a professional medical report and prescriptions sent straight to your private dashboard."
+  }
+]

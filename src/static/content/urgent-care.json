@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "label": "Infection",
+    "value": "infection",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Infection",
+      "description": "Infection is a condition caused by harmful microorganisms invading the body, requiring prompt diagnosis and treatment.",
+      "for": "Ages 18+ (Under 18 with parental consent)",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "2",
+    "label": "Bleeding",
+    "value": "bleeding",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Bleeding",
+      "description": "Severe or uncontrolled bleeding requires immediate attention to prevent shock or other serious complications.",
+      "for": "All ages",
+      "time": "Immediate"
+    }
+  },
+  {
+    "id": "3",
+    "label": "High Fever",
+    "value": "high-fever",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "High Fever",
+      "description": "A high or persistent fever can indicate a serious infection or illness and may need urgent care.",
+      "for": "All ages",
+      "time": "5–10 mins"
+    }
+  },
+  {
+    "id": "4",
+    "label": "Severe Pain",
+    "value": "severe-pain",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Severe Pain",
+      "description": "Uncontrolled or sudden severe pain may signal an emergency and should be evaluated quickly.",
+      "for": "Ages 12+ (with support for minors)",
+      "time": "Under 10 mins"
+    }
+  },
+  {
+    "id": "5",
+    "label": "Breathing Issues",
+    "value": "breathing-issues",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Breathing Issues",
+      "description": "Shortness of breath or difficulty breathing can be life-threatening and requires urgent care.",
+      "for": "All ages",
+      "time": "Immediate"
+    }
+  }
+]

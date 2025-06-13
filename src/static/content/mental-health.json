@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "label": "Anxiety",
+    "value": "anxiety",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Anxiety",
+      "description": "Anxiety involves excessive worry, fear, or nervousness that can interfere with daily life. Support and intervention can help manage symptoms effectively.",
+      "for": "Ages 13+ (Parental consent under 18)",
+      "time": "5–10 mins"
+    }
+  },
+  {
+    "id": "2",
+    "label": "Depression",
+    "value": "depression",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Depression",
+      "description": "Depression is a common mood disorder that affects how a person feels, thinks, and handles daily activities. Early support can lead to better outcomes.",
+      "for": "Ages 13+",
+      "time": "5 mins or less"
+    }
+  },
+  {
+    "id": "3",
+    "label": "Panic Attack",
+    "value": "panic-attack",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Panic Attack",
+      "description": "Panic attacks are sudden episodes of intense fear or discomfort. Quick access to help can provide relief and reduce recurrence.",
+      "for": "Ages 15+",
+      "time": "Immediate"
+    }
+  },
+  {
+    "id": "4",
+    "label": "Insomnia",
+    "value": "insomnia",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Insomnia",
+      "description": "Insomnia is difficulty falling or staying asleep, which can impact mental and physical health. Timely guidance can restore healthy sleep patterns.",
+      "for": "Ages 16+",
+      "time": "5–10 mins"
+    }
+  },
+  {
+    "id": "5",
+    "label": "Stress",
+    "value": "stress",
+    "icon": "/images/icons/allergy.png",
+    "content": {
+      "image": "/images/iphone-prototype.png",
+      "title": "Stress",
+      "description": "Stress is the body's reaction to pressure or challenges. Managing stress is vital for mental wellness and can prevent more serious conditions.",
+      "for": "All ages (Support varies by age)",
+      "time": "5 mins or less"
+    }
+  }
+]
