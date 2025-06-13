@@ -1,3 +1,7 @@
+##### 13.06.2025
+
+> Update: Hero banner selective tranparency fix
+
 ##### 12.06.2025
 
 > Update: Face uplift

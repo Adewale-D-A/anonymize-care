@@ -6,7 +6,7 @@ import {
   WifiHigh,
 } from "lucide-react";
 import anonymizeCarePathway from "@/static/content/anonymize-care-pathway.json";
-import CustomLink from "@/component/button/link";
+import CustomLink from "@/component/app-reusables/button/link";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 

@@ -1,15 +1,15 @@
-import HeroInfoContent from "@/component/hero-info-content";
+import HeroInfoContent from "@/component/page-splits/hero-info-content";
 import { ArrowRight } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import features from "@/static/content/features.json";
 import Link from "next/link";
-import PricingOptions from "@/component/pricing-options";
-import CustomLink from "@/component/button/link";
+import PricingOptions from "@/component/page-splits/pricing-options";
+import CustomLink from "@/component/app-reusables/button/link";
 import { cn } from "@/utils/cn";
-import ContactForm from "@/component/contactForm";
-import PageDelayLoader from "@/component/loader/intro-animation";
-import HowItWorks from "@/component/how-it-works";
+import ContactForm from "@/component/page-splits/contactForm";
+import PageDelayLoader from "@/component/app-reusables/loader/intro-animation";
+import HowItWorks from "@/component/page-splits/how-it-works";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -35,9 +35,9 @@ export default function Home() {
           </div>
         </section>
         {/* hero section */}
-        <section className="w-full h-screen relative flex justify-center bg-[url('/images/hero-banner.jpg')] bg-right bg-no-repeat bg-cover rounded-b-3xl py-0 px-5 lg:py-16">
-          <div className=" w-full h-full absolute top-0 left-0 bg-[url('/images/hero-gif-2.gif')] bg-right bg-no-repeat bg-cover opacity-20"></div>
-          <div className="h-full max-w-screen-xl w-full flex justify-center items-center lg:justify-end lg:items-end z-10">
+        <section className="w-full h-screen relative flex justify-center  bg-[url('/images/hero-gif-2.gif')] bg-right bg-no-repeat bg-cover rounded-b-3xl">
+          <div className=" w-full h-full absolute top-0 left-0 bg-[url('/images/hero-banner.png')] bg-center bg-no-repeat bg-cover  rounded-b-3xl"></div>
+          <div className="h-full max-w-screen-xl w-full flex justify-center items-center lg:justify-end lg:items-end z-10  py-0 px-5 lg:py-16">
             <HeroInfoContent />
           </div>
         </section>

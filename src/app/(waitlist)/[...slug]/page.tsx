@@ -1,4 +1,4 @@
-import CopyContent from "@/component/button/copy";
+import CopyContent from "@/component/app-reusables/button/copy";
 import Link from "next/link";
 
 type Params = Promise<{ slug: string[] }>;

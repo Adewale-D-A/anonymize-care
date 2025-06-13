@@ -1,7 +1,7 @@
-import ThemeModeToggle from "@/component/button/theme-mode-toggle";
-import SubscribeToNewsletter from "@/component/contactForm/subscribe";
-import FooterMenu from "@/component/footer";
-import NavMenu from "@/component/nav-menu";
+import ThemeModeToggle from "@/component/app-reusables/button/theme-mode-toggle";
+import SubscribeToNewsletter from "@/component/page-splits/contactForm/subscribe";
+import FooterMenu from "@/component/app-reusables/footer";
+import NavMenu from "@/component/app-reusables/nav-menu";
 
 export default function PublicLayout({
   children,

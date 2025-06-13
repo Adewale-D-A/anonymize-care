@@ -2,10 +2,10 @@
 
 import React, { useCallback, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import TextInput from "../input/text";
-import TextAreaInput from "../input/textarea";
-import Button from "../button";
-import AlertModal from "../infoModal/alert-modal";
+import TextInput from "@/component/app-reusables/input/text";
+import TextAreaInput from "@/component/app-reusables/input/textarea";
+import Button from "@/component/app-reusables/button";
+import AlertModal from "@/component/app-reusables/infoModal/alert-modal";
 
 export default function ContactForm() {
   const form = useRef(null) as any;

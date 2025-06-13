@@ -1,4 +1,4 @@
-import WaitlistForm from "./waitlist-form";
+import WaitlistForm from "../../../component/page-splits/waitlist-form";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AnonymizeCare Waitlist",

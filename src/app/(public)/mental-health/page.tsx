@@ -1,6 +1,6 @@
-import HowItWorks from "@/component/how-it-works";
+import HowItWorks from "@/component/page-splits/how-it-works";
 import { Metadata } from "next";
-import MenuSections from "@/component/menu-sections";
+import MenuSections from "@/component/page-splits/menu-sections";
 import mentalHealthContent from "@/static/content/mental-health.json";
 
 export const metadata: Metadata = {

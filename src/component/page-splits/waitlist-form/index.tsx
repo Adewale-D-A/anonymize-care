@@ -2,12 +2,12 @@
 
 import axios from "axios";
 import { SyntheticEvent, useCallback, useRef, useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import Button from "@/component/button";
-import AlertModal from "@/component/infoModal/alert-modal";
-import { Logo } from "@/component/logo";
-import CheckNicknameAvailability from "@/component/input/check-nickname-availability";
 import { useRouter } from "next/navigation";
+import ReCAPTCHA from "react-google-recaptcha";
+import Button from "@/component/app-reusables/button";
+import AlertModal from "@/component/app-reusables/infoModal/alert-modal";
+import { Logo } from "@/component/app-reusables/logo";
+import CheckNicknameAvailability from "@/component/app-reusables/input/check-nickname-availability";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASEURL;
 const header = {

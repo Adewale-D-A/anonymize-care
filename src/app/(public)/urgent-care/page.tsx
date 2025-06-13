@@ -1,8 +1,8 @@
-import HowItWorks from "@/component/how-it-works";
-import MenuSections from "@/component/menu-sections";
+import HowItWorks from "@/component/page-splits/how-it-works";
+import MenuSections from "@/component/page-splits/menu-sections";
 import { Metadata } from "next";
 import urgentCareContent from "@/static/content/urgent-care.json";
-import StoreBadges from "@/component/store";
+import StoreBadges from "@/component/app-reusables/store";
 
 export const metadata: Metadata = {
   title: "Urgent Care",

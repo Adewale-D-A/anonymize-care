@@ -1,7 +1,4 @@
-import Image from "next/image";
-import Button from "../button";
-import Link from "next/link";
-import StoreBadges from "../store";
+import StoreBadges from "@/component/app-reusables/store";
 
 export default function HeroInfoContent() {
   return (

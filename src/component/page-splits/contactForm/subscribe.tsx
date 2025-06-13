@@ -1,8 +1,8 @@
 "use client";
 
 import { SyntheticEvent, useCallback, useState } from "react";
-import Button from "../button";
-import AlertModal from "../infoModal/alert-modal";
+import Button from "@/component/app-reusables/button";
+import AlertModal from "@/component/app-reusables/infoModal/alert-modal";
 
 export default function SubscribeToNewsletter() {
   const [email, setEmail] = useState("");

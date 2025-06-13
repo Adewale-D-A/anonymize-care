@@ -1,9 +1,8 @@
 "use client";
 import { cn } from "@/utils/cn";
-import { Activity } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useState } from "react";
-import CustomLink from "../button/link";
+import CustomLink from "@/component/app-reusables/button/link";
 export default function MenuSections({
   content,
   title,

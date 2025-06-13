@@ -3,7 +3,7 @@ import { ChevronRight, Plus } from "lucide-react";
 import { useState } from "react";
 import pricing from "@/static/content/pricing-options.json";
 import { cn } from "@/utils/cn";
-import CustomLink from "../button/link";
+import CustomLink from "@/component/app-reusables/button/link";
 
 export default function PricingOptions() {
   const [options, setOptions] = useState(pricing?.uninsured);
