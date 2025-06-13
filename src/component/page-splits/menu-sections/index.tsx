@@ -87,7 +87,7 @@ export default function MenuSections({
           <p>
             <b>Estimated wait time:</b> {currentSelection?.content?.time}
           </p>
-          <CustomLink href="/#contact">Talk to us</CustomLink>
+          <CustomLink href="/#contact">Talk to US</CustomLink>
         </div>
       </div>
     </section>

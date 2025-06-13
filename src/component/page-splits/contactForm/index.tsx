@@ -93,7 +93,7 @@ export default function ContactForm() {
             {
               id: "phone_number",
               label: "Phone",
-              placeholder: "000000000000000",
+              placeholder: "+2347012345678",
               type: "number",
               isRequired: true,
               state: phone,
@@ -101,7 +101,7 @@ export default function ContactForm() {
             },
             {
               id: "email",
-              label: "email",
+              label: "Email",
               placeholder: "example@example.com",
               type: "email",
               isRequired: true,
@@ -144,8 +144,8 @@ export default function ContactForm() {
         <p>
           <span className=" font-bold">For Inquiries:</span> Do you have
           questions about how AnonymizeCare can help you? Send us an email and
-          we’ll get in touch, or phone +234 (0) 809 000 1111 between 08:00 and
-          17:00 Monday to Friday — we would be delighted to speak.
+          we’ll get in touch, or phone +2349116889215 | +14373503453 between
+          08:00 and 17:00 Monday to Friday — we would be delighted to speak.
         </p>
       </form>
 

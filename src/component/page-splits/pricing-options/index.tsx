@@ -3,7 +3,7 @@ import { ChevronRight, Plus } from "lucide-react";
 import { useState } from "react";
 import pricing from "@/static/content/pricing-options.json";
 import { cn } from "@/utils/cn";
-import CustomLink from "@/component/app-reusables/button/link";
+import StoreBadges from "@/component/app-reusables/store";
 
 export default function PricingOptions() {
   const [options, setOptions] = useState(pricing?.uninsured);
@@ -44,22 +44,26 @@ export default function PricingOptions() {
                 <label className=" text-lg font-semibold">{item?.title}</label>
                 <div className=" flex flex-col gap-2">
                   {item?.pricing?.map((item) => (
-                    <span key={item?.time} className=" flex items-center gap-3">
-                      <Plus className=" text-secondary" /> {item?.currency}{" "}
-                      {item?.amount} for {item?.time} mins consultation
-                    </span>
+                    <div key={item?.plan} className="flex flex-col">
+                      <span
+                        key={item?.plan}
+                        className=" flex items-center gap-3"
+                      >
+                        <Plus className=" text-secondary" /> {item?.plan}
+                      </span>
+                      <span className=" pl-9">{item?.["extra-text"]}</span>
+                    </div>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-          <CustomLink href="#contact">Let&apos;s Talk</CustomLink>
+          {/* <CustomLink href="/waitlist">Choose a nick name</CustomLink> */}
+          <StoreBadges />
         </div>
         <p>
-          Figma ipsum component variant main layer. Plugin device overflow
-          comment move link blur. Device background link duplicate italic align
-          ipsum distribute figma. Component align vector shadow outline. Font
-          distribute rectangle stroke polygon pixel font layer layout.
+          Whether you’re covered or not, AnonymizeCare gives you direct access
+          to qualified doctors without the usual barriers.
         </p>
       </div>
     </div>

@@ -1,17 +1,22 @@
 [
   {
     "id": "1",
-    "title": "Create your account.",
-    "description": "Create your account on the website or in the app. It's free, there is no obligation or membership, and you don't need to enter a credit card. Follow the prompts to enter your health insurance or employer to see if your visit is covered. However, insurance is  not necessary."
+    "title": "Choose a Nickname",
+    "description": "Pick any name. This is how your consultant will refer to you—no email, no photo, no real name required."
   },
   {
     "id": "2",
-    "title": "See the next available provider, or schedule your appointment..",
-    "description": "Select the reason for your visit and answer a few questions to provide the doctor with some context. See a doctor in minutes or schedule your therapy or psychiatry visit. You must be signed to your account either on the app (phone) or through our website (computer) to visit with a provider."
+    "title": "Match with a Consultant",
+    "description": "We’ll connect you with a licensed healthcare provider based on your needs—instantly and anonymously."
   },
   {
     "id": "3",
-    "title": "Start your virtual doctor visit.",
-    "description": "Meet with one of our board-certified doctors, nurse practitioners, or clinician who will diagnose your symptoms and offer a custom treatment plan. If needed, you can get prescriptions sent to your local pharmacy."
+    "title": "Begin Your Virtual Consultation",
+    "description": "Secure video or chat consultation—your health concerns addressed from anywhere."
+  },
+  {
+    "id": "4",
+    "title": "Receive Your Report & Prescriptions",
+    "description": "Get a professional medical report and prescriptions sent straight to your private dashboard."
   }
 ]

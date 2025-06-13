@@ -1,5 +1,6 @@
 ##### 13.06.2025
 
+> Update: Contents updates
 > Update: Hero banner selective tranparency fix
 
 ##### 12.06.2025

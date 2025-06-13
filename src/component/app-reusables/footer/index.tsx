@@ -15,31 +15,33 @@ export default function FooterMenu() {
             {
               id: 1,
               label: "Our Services",
-              url: "#",
+              url: "https://www.7thcare.com/services",
             },
             {
               id: 2,
               label: "Who we are",
-              url: "#",
+              url: "https://www.7thcare.com/about-us",
             },
             {
               id: 3,
               label: "News & Updates",
-              url: "#",
+              url: "https://www.7thcare.com/support",
             },
             {
               id: 4,
               label: "Support",
-              url: "#",
+              url: "https://www.7thcare.com/support",
             },
             {
               id: 5,
               label: "Privacy Policy",
-              url: "#",
+              url: "https://www.7thcare.com/support",
             },
           ].map((section) => (
             <Link
               key={section?.id}
+              target="_blank"
+              rel="noreferrer"
               href={section?.url}
               className=" font-semibold"
             >
@@ -53,7 +55,7 @@ export default function FooterMenu() {
             rel="noreferrer"
             href={"mailto:info@7thcare.com"}
           >
-            © 2025 AnonymizeCare. All rights reserved.
+            © 2025 7thCare Technology. All rights reserved.
           </Link>
           <div className=" flex items-center gap-4">
             {[
@@ -67,13 +69,13 @@ export default function FooterMenu() {
                 id: 2,
                 icon: <Twitter className="w-4 h-4" />,
                 title: "X",
-                url: "https://x.com/the7thcare",
+                url: "https://x.com/anonymizecare",
               },
               {
                 id: 3,
                 icon: <Instagram className="w-4 h-4" />,
                 title: "Instagram",
-                url: "https://www.instagram.com/7thcare",
+                url: "https://www.instagram.com/anonymizecare",
               },
             ].map(({ id, icon, url, title }) => (
               <Link

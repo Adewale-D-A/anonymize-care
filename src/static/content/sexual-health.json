@@ -13,32 +13,6 @@
     }
   },
   {
-    "id": "2",
-    "label": "Contraception",
-    "value": "contraception",
-    "icon": "/images/icons/allergy.png",
-    "content": {
-      "image": "/images/iphone-prototype.png",
-      "title": "Contraception",
-      "description": "Access to contraceptive methods helps individuals plan pregnancies and manage reproductive health safely and effectively.",
-      "for": "Ages 15+",
-      "time": "5 mins or less"
-    }
-  },
-  {
-    "id": "3",
-    "label": "Pregnancy Testing",
-    "value": "pregnancy-testing",
-    "icon": "/images/icons/allergy.png",
-    "content": {
-      "image": "/images/iphone-prototype.png",
-      "title": "Pregnancy Testing",
-      "description": "Pregnancy tests provide quick and reliable results and are the first step in confirming pregnancy for further care planning.",
-      "for": "Ages 13+",
-      "time": "5 mins or less"
-    }
-  },
-  {
     "id": "4",
     "label": "Antenatal Care",
     "value": "antenatal-care",

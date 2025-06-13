@@ -2,15 +2,17 @@ import StoreBadges from "@/component/app-reusables/store";
 
 export default function HeroInfoContent() {
   return (
-    <div className=" dark:bg-dark-ash-500 bg-white text-dark-ash-900 transition-all dark:text-white p-6 py-10 rounded-2xl w-full max-w-xl flex flex-col gap-5 text-center">
+    <div className=" bg-dark-ash-500  transition-all text-white p-5 lg:p-10 rounded-2xl w-full max-w-2xl flex flex-col items-center gap-5 text-center">
       <h3 className=" font-bold text-primary text-2xl lg:text-3xl">
-        Health Should Always Be Within Reach
+        Your Health. Your Privacy. <br />
+        Our Priority
       </h3>
-      <p className=" text-left">
-        Figma ipsum component variant main layer. Plugin device overflow comment
-        move link blur. Device background link duplicate italic align ipsum
-        distribute figma. Component align vector shadow outline. Font distribute
-        rectangle stroke polygon pixel font layer layout.
+      <p className=" text-center">
+        AnonymizeCare connects you to certified medical professionals—without
+        ever revealing your identity. No names. No faces. Just care. Register in
+        seconds, choose a nickname, and start receiving real medical advice and
+        prescriptions from licensed consultants.
+        <br /> Completely private. 100% secure.
       </p>
 
       <StoreBadges />

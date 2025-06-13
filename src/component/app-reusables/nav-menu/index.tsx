@@ -51,7 +51,7 @@ export default function NavMenu() {
           >
             For Hospitals
           </CustomLink>
-          <CustomLink href="/#contact">Talk To Us</CustomLink>
+          <CustomLink href="/#contact">Talk To US</CustomLink>
         </div>
       </div>
     </nav>
