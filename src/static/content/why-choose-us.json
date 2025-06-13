@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "True Anonymity",
+    "icon": "",
+    "content": "No sign-ups with real names, emails, or documents.",
+    "image": "/images/secure.png"
+  },
+  {
+    "id": "2",
+    "title": "Certified Professional",
+    "icon": "",
+    "content": "Speak with licensed consultants.",
+    "image": "/images/certified.png"
+  },
+  {
+    "id": "3",
+    "title": "Accessible Anywhere",
+    "icon": "",
+    "content": "All you need is internet access—no clinics, no waiting rooms.",
+    "image": "/images/accessible.png"
+  },
+  {
+    "id": "4",
+    "title": "Secure & Confidential",
+    "icon": "/images/anonymous.png",
+    "content": "Encrypted consultations, private records.",
+    "image": "/images/anonymous.png"
+  }
+]

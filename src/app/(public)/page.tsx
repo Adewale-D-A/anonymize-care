@@ -10,6 +10,7 @@ import { cn } from "@/utils/cn";
 import ContactForm from "@/component/page-splits/contactForm";
 import PageDelayLoader from "@/component/app-reusables/loader/intro-animation";
 import HowItWorks from "@/component/page-splits/how-it-works";
+import WhyChooseUs from "@/component/page-splits/why-choose-us";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -122,6 +123,12 @@ export default function Home() {
             <PricingOptions />
           </div>
         </section>
+        {/* why choose us */}
+        <section className="w-full flex justify-center flex-col items-center transition-all bg-secondary dark:bg-dark-ash-900 text-dark-ash-900 dark:text-white">
+          <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24">
+            <WhyChooseUs />{" "}
+          </div>
+        </section>{" "}
         {/* introduction section */}{" "}
         <section className="w-full flex justify-center flex-col items-center transition-all bg-white dark:bg-dark-ash-500 text-dark-ash-900 dark:text-white">
           <HowItWorks />

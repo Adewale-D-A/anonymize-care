@@ -1,5 +1,6 @@
 ##### 13.06.2025
 
+> Feature: Why choose us section UI development
 > Update: Contents updates
 > Update: Hero banner selective tranparency fix
 
