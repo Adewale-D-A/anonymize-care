@@ -1,3 +1,7 @@
+##### 14.06.2025
+
+> Feature: Why choose use animation implementation
+
 ##### 13.06.2025
 
 > Feature: Why choose us section UI development

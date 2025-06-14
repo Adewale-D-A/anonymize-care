@@ -49,8 +49,8 @@ export default function MenuSections({
             >
               {" "}
               <Image
-                src={currentSelection?.icon}
-                alt={currentSelection?.label}
+                src={item?.icon}
+                alt={item?.label}
                 height={100}
                 width={100}
                 className=" aspect-square h-6 w-6"

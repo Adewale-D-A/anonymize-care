@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${centuryGothic.variable} antialiased w-full bg-white dark:bg-dark-ash-500`}
+        className={`${centuryGothic.variable} antialiased w-full styled-gradient-2 dark:bg-dark-ash-500`}
       >
         {children}
       </body>

@@ -40,6 +40,9 @@ body {
 .styled-gradient {
 background: linear-gradient(to right, white 60%, #2E9511 80%, #007CD7 100%);
 }
+.styled-gradient-2 {
+    background-image: radial-gradient(circle at 100%, #44bcf41f, #e9f4d81a 37%), radial-gradient(circle at 0%, #44bcf41f, #e9f4d81a 36%, #dde2ff00);
+}
 /* gradient */
 .blurry{
   -webkit-backdrop-filter: blur(10px); /* For Safari */

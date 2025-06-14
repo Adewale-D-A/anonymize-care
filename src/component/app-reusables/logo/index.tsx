@@ -5,12 +5,12 @@ export const Logo = () => {
   return (
     <Link
       href="/"
-      className={"flex items-center justify-between rounded-lg overflow-hidden"}
+      className={"flex items-center justify-between overflow-hidden"}
     >
       <Image
         src={"/logo.png"}
-        width={200}
-        height={200}
+        width={500}
+        height={500}
         alt="anonymizeCare"
         className="md:h-[60px] h-[40px] w-auto"
       />

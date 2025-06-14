@@ -26,7 +26,7 @@ export default function Home() {
             <h5 className=" text-md lg:text-2xl text-dark-ash-900 ">
               <span className=" font-bold">CareChampions:</span> community
               healthcare.. one door, one community at a time.
-            </h5>{" "}
+            </h5>
             <CustomLink
               href="#contact"
               className=" bg-white text-primary border-none"
@@ -36,8 +36,8 @@ export default function Home() {
           </div>
         </section>
         {/* hero section */}
-        <section className="w-full h-screen relative flex justify-center  bg-[url('/images/hero-gif.gif')] bg-right bg-no-repeat bg-cover rounded-b-3xl">
-          <div className=" w-full h-full absolute top-0 left-0 bg-[url('/images/hero-banner.png')] bg-center bg-no-repeat bg-cover  rounded-b-3xl"></div>
+        <section className="w-full h-screen relative flex justify-center  bg-[url('/images/hero-gif.gif')] bg-right bg-no-repeat bg-cover">
+          <div className=" w-full h-full absolute top-0 left-0 bg-[url('/images/hero-banner.png')] bg-center bg-no-repeat bg-cover"></div>
           <div className="h-full max-w-screen-xl w-full flex justify-center items-center lg:justify-end lg:items-end z-10  py-0 px-5 lg:py-16">
             <HeroInfoContent />
           </div>
@@ -47,16 +47,16 @@ export default function Home() {
           <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24 flex flex-col gap-12">
             <div className="w-full text-center text-3xl">
               <h2>
-                From everyday{" "}
-                <span className=" text-primary"> Urgent Care</span> to{" "}
-                <span className=" text-primary">Mental Wellness </span>to{" "}
+                From everyday
+                <span className=" text-primary"> Urgent Care</span> to
+                <span className=" text-primary">Mental Wellness </span>to
                 <span className=" text-primary">
                   Sexual and Reproductive Healthcare
                 </span>
                 .
               </h2>
               <h2>
-                From our CareChampions to Consultants, everything you need,{" "}
+                From our CareChampions to Consultants, everything you need,
                 <span className=" text-primary">all in one place</span>.
               </h2>
               <h2>Personalized & Privatized healthcare for you.</h2>
@@ -119,24 +119,24 @@ export default function Home() {
                 members around the country. <br /> Your AnonymizeCare visit may
                 be as low as ₦0/visit.
               </p>
-            </div>{" "}
+            </div>
             <PricingOptions />
           </div>
         </section>
         {/* why choose us */}
-        <section className="w-full flex justify-center flex-col items-center transition-all bg-secondary dark:bg-dark-ash-900 text-dark-ash-900 dark:text-white">
-          <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24">
-            <WhyChooseUs />{" "}
-          </div>
-        </section>{" "}
-        {/* introduction section */}{" "}
+        <section className="w-full flex justify-center flex-col items-center transition-all styled-gradient-2 dark:bg-dark-ash-900 text-dark-ash-900 dark:text-white px-5 lg:px-10 py-24">
+          {/* <div className=" w-full px-5 lg:px-10 my-24"> */}
+          <WhyChooseUs />
+          {/* </div> */}
+        </section>
+        {/* introduction section */}
         <section className="w-full flex justify-center flex-col items-center transition-all bg-white dark:bg-dark-ash-500 text-dark-ash-900 dark:text-white">
           <HowItWorks />
         </section>
         {/* request form */}
         <section
           id="contact"
-          className="w-full flex justify-center flex-col items-center transition-all bg-white dark:bg-dark-ash-500 text-dark-ash-900 dark:text-white"
+          className="w-full flex justify-center flex-col items-center transition-all bg-dark-ash-500 text-white"
         >
           <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className=" w-full h-full">
@@ -154,7 +154,7 @@ export default function Home() {
               <p className=" max-w-xl">
                 Would you like to speak to one of our technology specialist over
                 the phone? Just submit your details and we’ll be in touch
-                shortly.You can also{" "}
+                shortly.You can also
                 <Link
                   target="_blank"
                   rel="noreferrer"
@@ -162,7 +162,7 @@ export default function Home() {
                   className=" underline text-primary lowercase"
                 >
                   SEND AN EMAIL
-                </Link>{" "}
+                </Link>
                 if you would prefer.
               </p>
               <ContactForm />

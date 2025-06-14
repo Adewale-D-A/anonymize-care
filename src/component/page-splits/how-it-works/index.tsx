@@ -1,25 +1,17 @@
 import howToGuide from "@/static/content/how-to-guide.json";
-import {
-  ArrowRight,
-  BatteryCharging,
-  SignalMedium,
-  WifiHigh,
-} from "lucide-react";
-import anonymizeCarePathway from "@/static/content/anonymize-care-pathway.json";
 import CustomLink from "@/component/app-reusables/button/link";
-import { cn } from "@/utils/cn";
 import Image from "next/image";
 
 export default function HowItWorks() {
   return (
     <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24 flex flex-col items-center gap-12">
       <div className="w-full max-w-5xl text-center flex flex-col items-center gap-5">
-        <p>Introducing</p>
+        {/* <p>Introducing</p> */}
         <h2 className=" text-center text-3xl font-bold">How Anonymize works</h2>
       </div>
       <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div className=" lg:pr-36 h-full">
-          <div className=" bg-gray-100 dark:bg-dark-ash-700 dark:text-white rounded-sm overflow-clip h-full text-center flex flex-col items-center justify-between gap-10 text-dark-ash-900">
+        <div className=" lg:pr-0 flex justify-end h-full">
+          {/* <div className=" bg-gray-100 dark:bg-dark-ash-700 dark:text-white rounded-sm overflow-clip h-full text-center flex flex-col items-center justify-between gap-10 text-dark-ash-900">
             <div className=" flex justify-between w-full p-4">
               <span className=" font-bold">9:41</span>
               <div className=" flex items-center gap-2">
@@ -69,7 +61,14 @@ export default function HowItWorks() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          <Image
+            src={"/images/iphone-prototype.png"}
+            alt="mobile app"
+            height={300}
+            width={300}
+            className=" w-full lg:w-[70%] h-auto"
+          />
         </div>
         <div className=" flex flex-col gap-16 lg:gap-28">
           <div className=" flex flex-col gap-10">

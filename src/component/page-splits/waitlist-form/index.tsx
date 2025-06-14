@@ -101,7 +101,7 @@ export default function WaitlistForm() {
           <Logo />
           <div className=" text-center">
             <h4 className=" text-3xl font-bold">
-              Join the AnonymizeCare Waitlist
+              Reserve your AnonymizeCare nickname
             </h4>
             <div className=" w-full flex justify-center">
               <p className=" text-sm text-gray-500  max-w-sm">

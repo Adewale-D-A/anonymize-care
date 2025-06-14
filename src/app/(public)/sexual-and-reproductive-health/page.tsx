@@ -2,6 +2,7 @@ import HowItWorks from "@/component/page-splits/how-it-works";
 import { Metadata } from "next";
 import MenuSections from "@/component/page-splits/menu-sections";
 import sexualHealthContent from "@/static/content/sexual-health.json";
+import PriceRange from "@/component/page-splits/price-range";
 
 export const metadata: Metadata = {
   title: "Sexual And Reporductive Health",
@@ -15,6 +16,7 @@ export default function SexualAndReproductiveHealth() {
         title="Sexual and Reproductive Health"
         content={sexualHealthContent}
       />
+      <PriceRange />
       <section className="w-full flex justify-center flex-col items-center transition-all bg-white dark:bg-dark-ash-500 text-dark-ash-900 dark:text-white">
         <HowItWorks />
       </section>

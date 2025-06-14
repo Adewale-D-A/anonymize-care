@@ -13,7 +13,7 @@ export default function PublicLayout({
       <NavMenu />
       {children}
       {/* subscribe section */}
-      <section className="w-full flex justify-center flex-col items-center transition-all bg-secondary text-white">
+      {/* <section className="w-full flex justify-center flex-col items-center transition-all bg-secondary text-white">
         <div className=" w-full  max-w-screen-xl px-5 lg:px-10 my-24 flex flex-col items-center gap-12">
           <div className="w-full max-w-5xl text-center flex flex-col items-center gap-5">
             <h2 className=" text-center text-3xl font-bold">
@@ -23,7 +23,7 @@ export default function PublicLayout({
           </div>
           <SubscribeToNewsletter />
         </div>
-      </section>
+      </section> */}
       {/* footer  */}
       <FooterMenu />
       <div className=" fixed bottom-10 right-16 z-50">

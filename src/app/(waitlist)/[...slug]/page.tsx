@@ -32,7 +32,7 @@ export default async function RegisteredSuccesssfully(props: {
           <p>
             Download the app and login with these details when we go live on{" "}
             <span className="font-semibold text-secondary text-2xl">
-              June 14
+              July 7
             </span>
             .
           </p>

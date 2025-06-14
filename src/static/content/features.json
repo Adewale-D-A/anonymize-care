@@ -4,7 +4,7 @@
     "header": "Individuals",
     "content": "no name, no face..",
     "content_2": "recieve care",
-    "url": "#contact",
+    "url": "/waitlist",
     "url_label": "Choose  Nickname",
     "image": "/images/features-img-1.png"
   },
@@ -20,8 +20,8 @@
   {
     "id": "3",
     "header": "COMMUNITY CARE",
-    "content": "Our CareChampions",
-    "content_2": "without the spotlight.",
+    "content": "Our CareChampions..",
+    "content_2": "without the spotlight",
     "url": "#contact",
     "url_label": "Register your community",
     "image": "/images/features-img-3.png"
