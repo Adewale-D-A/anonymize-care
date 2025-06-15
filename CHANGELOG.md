@@ -1,3 +1,8 @@
+##### 16.06.2025
+
+> Update: Scroll to view logic adjustment
+> Bug fix: Menu items icon broken images fix
+
 ##### 14.06.2025
 
 > Feature: Why choose use animation implementation

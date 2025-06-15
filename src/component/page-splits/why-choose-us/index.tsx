@@ -1,41 +1,37 @@
 "use client";
-import useInView from "@/hook/use-in-view";
-import whyUs from "@/static/content/why-choose-us.json";
-import { cn } from "@/utils/cn";
 import { BadgeCheck, EyeClosed, TabletSmartphone } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
+import useInView from "@/hook/use-in-view";
+import whyUs from "@/static/content/why-choose-us.json";
+import { cn } from "@/utils/cn";
 
 export default function WhyChooseUs() {
   const [ref, isInView] = useInView();
   const boxRef = useRef(null) as any;
   const [currentSelection, setCurrentSelection] = useState(whyUs[0]);
-  const [marginSet, setMarginSet] = useState(window.innerWidth / 2);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const initialMargin = window.innerWidth / 2;
 
   const handleSelection = useCallback(
-    (id: string) => {
-      const indexOf = whyUs.findIndex((item) => item?.id === id);
-      setCurrentSelection(whyUs[indexOf]);
-      const item = boxRef?.current?.childNodes[indexOf];
-      item?.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      });
+    (index: number) => {
+      setCurrentIndex(index);
+      setCurrentSelection(whyUs[index]);
     },
-    [whyUs, boxRef]
+    [whyUs]
   );
 
   useEffect(() => {
     if (isInView) {
-      const item = boxRef?.current?.childNodes[0];
+      const item = boxRef?.current?.childNodes[currentIndex];
       item?.scrollIntoView({
         behavior: "smooth",
         inline: "center",
         block: "nearest",
       });
     }
-  }, [isInView]);
+  }, [isInView, currentIndex]);
+
   return (
     <div
       ref={ref}
@@ -45,13 +41,13 @@ export default function WhyChooseUs() {
         Why Choose AnonymizeCare?
       </span>
       <div className=" grid grid-cols-3 gap-5 lg:gap-10">
-        {whyUs.map((item) => (
+        {whyUs.map((item, index) => (
           <div
             key={item.id}
             className=" flex flex-col gap-2 items-center text-center"
           >
             <button
-              onClick={() => handleSelection(item?.id)}
+              onClick={() => handleSelection(index)}
               className={cn(
                 "p-8 rounded-xl bg-primary/30 dark:text-white opacity-30  hover:scale-110  hover:-2xl transition-all cursor-pointer -gray-400 dark:-gray-700",
                 currentSelection?.id === item?.id &&
@@ -68,20 +64,20 @@ export default function WhyChooseUs() {
           </div>
         ))}
       </div>
-      <div className=" w-full overflow-x-hidden">
+      <div className=" w-full overflow-x-auto hide-scroll ">
         <div
           ref={boxRef}
           style={{
-            marginLeft: marginSet,
+            marginLeft: initialMargin,
           }}
-          className="w-full flex flex-row items-stretch gap-5 lg:gap-10 transition-all overflow-x-hidden"
+          className="w-full flex flex-row items-stretch gap-5 lg:gap-10 transition-all overflow-x-auto hide-scroll "
         >
-          {whyUs.map((item) => (
+          {whyUs.map((item, index) => (
             <button
-              onClick={() => handleSelection(item?.id)}
+              onClick={() => handleSelection(index)}
               key={item.id}
               className={cn(
-                " rounded-xl min-w-full lg:min-w-xl w-full py-16 text-dark-ash-900 border flex flex-col dark:text-white justify-between border-gray-400  transition-all cursor-pointer opacity-30 hover:opacity-100",
+                " rounded-xl min-w-full lg:min-w-xl w-full pt-4 pb-12 text-dark-ash-900 border flex flex-col dark:text-white justify-between border-gray-400  transition-all cursor-pointer opacity-30 hover:opacity-100",
                 currentSelection?.id === item?.id &&
                   "styled-gradient-2 dark:bg-primary/30 text-dark-ash-900 dark:text-white opacity-100"
               )}
@@ -101,6 +97,11 @@ export default function WhyChooseUs() {
               </div>
             </button>
           ))}
+          <button
+            className={cn(
+              "opacity-0 min-w-full lg:min-w-xl w-full hidden lg:block"
+            )}
+          ></button>
         </div>
       </div>
     </div>
