@@ -3,7 +3,7 @@
     "id": "1",
     "label": "STI Screening",
     "value": "sti-screening",
-    "icon": "/images/icons/virus.png",
+    "icon": "/images/icons/infection.png",
     "content": {
       "image": "/images/iphone-prototype.png",
       "title": "STI Screening",
@@ -29,7 +29,7 @@
     "id": "5",
     "label": "Menstrual Health",
     "value": "menstrual-health",
-    "icon": "/images/icons/kidneys.png",
+    "icon": "/images/icons/internals.png",
     "content": {
       "image": "/images/iphone-prototype.png",
       "title": "Menstrual Health",

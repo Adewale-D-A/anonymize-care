@@ -3,7 +3,7 @@
     "id": "1",
     "label": "Infection",
     "value": "infection",
-    "icon": "/images/icons/virus.png",
+    "icon": "/images/icons/infection.png",
     "content": {
       "image": "/images/iphone-prototype.png",
       "title": "Infection",
@@ -55,7 +55,7 @@
     "id": "5",
     "label": "Breathing Issues",
     "value": "breathing-issues",
-    "icon": "/images/icons/kidneys.png",
+    "icon": "/images/icons/internals.png",
     "content": {
       "image": "/images/iphone-prototype.png",
       "title": "Breathing Issues",

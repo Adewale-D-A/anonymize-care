@@ -54,7 +54,6 @@ export default function MenuSections({
                 height={100}
                 width={100}
                 className=" aspect-square h-6 w-6"
-                unoptimized
               />
               {item?.label}
             </button>
@@ -77,7 +76,6 @@ export default function MenuSections({
             height={100}
             width={100}
             className=" aspect-square h-16 w-16"
-            unoptimized
           />
           <h5 className=" text-2xl font-bold">
             {currentSelection?.content?.title}
