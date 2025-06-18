@@ -49,15 +49,16 @@ export default function Home() {
               <h2>
                 From everyday
                 <span className=" text-primary"> Urgent Care</span> to
-                <span className=" text-primary">Mental Wellness </span>to
+                <span className=" text-primary"> Mental Wellness </span>to
                 <span className=" text-primary">
+                  {" "}
                   Sexual and Reproductive Healthcare
                 </span>
                 .
               </h2>
               <h2>
                 From our CareChampions to Consultants, everything you need,
-                <span className=" text-primary">all in one place</span>.
+                <span className=" text-primary"> all in one place</span>.
               </h2>
               <h2>Personalized & Privatized healthcare for you.</h2>
             </div>
