@@ -1,3 +1,8 @@
+##### 05.08.2025
+
+> Feature: Delete mobile app account procedure
+> Feature: Privacy policy addition
+
 ##### 16.06.2025
 
 > Update: Scroll to view logic adjustment
