@@ -1,3 +1,7 @@
+##### 06.08.2025
+
+> Update: Privacy policy content adjustment
+
 ##### 05.08.2025
 
 > Feature: Delete mobile app account procedure
