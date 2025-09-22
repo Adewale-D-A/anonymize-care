@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const PLAY_STORE = process.env.NEXT_PUBLIC_PLAY_STORE || "/waitlist";
 export default function StoreBadges() {
   return (
     <div className=" flex items-center gap-5">
-      <Link href={"/waitlist"} className=" hover:scale-125 transition-all">
+      <Link href={PLAY_STORE} className=" hover:scale-125 transition-all">
         <Image
           src={"/images/google-play-badge.png"}
           alt="google-store"

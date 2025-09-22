@@ -1,3 +1,7 @@
+##### 22.09.2025
+
+> Feature: Redirect waitlist to play store
+
 ##### 06.08.2025
 
 > Update: Privacy policy content adjustment
